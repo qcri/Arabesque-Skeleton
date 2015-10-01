@@ -1,0 +1,18 @@
+# How many Hadoop containers to use
+num_workers: 1
+
+# How many threads per container to use
+num_compute_threads: 1
+
+# Disable output generation without recompiling
+#output_active: no
+
+# Giraph configuration (uncomment and tune for performance)
+#giraph.nettyClientThreads: 32
+#giraph.nettyServerThreads: 32
+#giraph.nettyClientExecutionThreads: 32
+#giraph.channelsPerServer: 4
+#giraph.useBigDataIOForMessages: true
+#giraph.useNettyPooledAllocator: true
+#giraph.useNettyDirectMemory: true
+#giraph.nettyRequestEncoderBufferSize: 1048576

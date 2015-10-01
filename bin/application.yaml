@@ -1,0 +1,14 @@
+# What Arabesque computation class to use
+computation: org.example.arabesque.CliqueComputation
+
+# HDFS path to input graph
+input_graph_path: citeseer-single-label.graph
+
+# Output path
+output_path: Output
+
+# How to distribute embeddings: odag (default); embeddings; <Java class ref extends CommunicationStrategyFactory>
+#communication_strategy: embeddings
+
+# Computation parameters
+arabesque.clique.maxsize: 4
