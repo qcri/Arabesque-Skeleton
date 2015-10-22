@@ -98,7 +98,7 @@ you'll put everything necessary to execute your computation:
     
     Vertex ids should be in the range between 0 and `(number of vertices - 1)`. A sample graph is under the `data` directory.
     
-3. Upload your input graph to HDFS. A sample graph is under the `data` directory.
+3. Upload your input graph to HDFS. A sample graph is under the `data` directory. Make sure you have initialized HDFS first.
 
   ```
   hdfs dfs -put <input graph file> <destination graph file in HDFS>
