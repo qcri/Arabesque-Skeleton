@@ -45,7 +45,7 @@ You should then edit the `pom.xml` file paying particular attention to the follo
 Give it a descriptive name and description and make sure to change the group and
 artifact ids.
 
-You should also change the following line in `bin/run_arabesque.sh` to match
+You should also change the following line in `scripts/run_arabesque.sh` to match
 your new artifactId:
 
 ```
@@ -84,9 +84,9 @@ you'll put everything necessary to execute your computation:
 
 2. Put all the following files in that directory (using SCP/FTP/...):
   * `<artifactId>-<version>-jar-with-dependencies.jar`
-  * `run_arabesque.sh`
-  * `cluster.yaml`
-  * `application.yaml`
+  * `scripts/run_arabesque.sh`
+  * `scripts/cluster.yaml`
+  * `scripts/application.yaml`
   * An input graph with the correct input format as expected by Arabesque:
 
     ```
@@ -96,9 +96,9 @@ you'll put everything necessary to execute your computation:
     ...
     ```
     
-    Vertex ids should be in the range between 0 and `(number of vertices - 1)`.
+    Vertex ids should be in the range between 0 and `(number of vertices - 1)`. A sample graph is under the `data` directory.
     
-3. Upload your input graph to HDFS
+3. Upload your input graph to HDFS. A sample graph is under the `data` directory.
 
   ```
   hdfs dfs -put <input graph file> <destination graph file in HDFS>
